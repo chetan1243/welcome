@@ -60,4 +60,4 @@ client.on('message', async message => {
 	}
 });
 
-client.login('NTE5NDg1NDUzODQ2NDQ2MTEw.DwexXg.HNIQOp_5YN1QV_YgU9pwcBsdw1U');
+client.login(process.env.TOKEN);
