@@ -40,6 +40,10 @@ client.on('guildMemberAdd', async member => {
 	ctx.fillStyle = '#ffffff';
 	ctx.fillText(`${member.displayName}!`, canvas.width / 2.5, canvas.height / 1.8);
 
+        ctx.font = `28px sans-serif`;
+	ctx.fillStyle = '#ffffff';
+	ctx.fillText(`you are the ${member.guild.memberCount}th member !`, canvas.width / 3.2, canvas.height / 1.2);
+
 	ctx.beginPath();
 	ctx.arc(125, 125, 100, 0, Math.PI * 2, true);
 	ctx.closePath();
